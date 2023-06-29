@@ -27,11 +27,12 @@
         return;
       }
 
-      // Perform sign-in logic (this is where you would make an API call to the server for authentication)
+      // Save the username and password (you can use browser's local storage or cookies for this purpose)
+      localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
 
-      // For this example, let's assume a successful sign-in for any non-empty inputs
-      alert("Sign-in successful!");
-      document.getElementById("signin-form").reset(); // Reset the form
+      // Redirect the user to another site
+      window.location.href = "https://www.example.com"; // Replace with the desired URL
     });
   </script>
 </body>
